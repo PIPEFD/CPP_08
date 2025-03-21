@@ -1,4 +1,4 @@
-NAME =  array
+NAME =  MutantStack
 
 SRC_DIR = src/
 INC = inc/
@@ -31,7 +31,7 @@ all:		$(NAME)
 
 $(NAME): $(OBJS_FILES)
 	@$(CXX) -o $(NAME) $(FLAGS) $(OBJS_FILES)
-	@echo "$(GREEN)ARRAY COMPILED SUCCESSFULLY!$(CLEAR)"
+	@echo "$(GREEN)MUTANTSTACK COMPILED SUCCESSFULLY!$(CLEAR)"
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.cpp
 	@mkdir -p $(OBJ_DIR)
