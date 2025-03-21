@@ -1,11 +1,12 @@
-NAME =  array
+NAME =  Span
 
 SRC_DIR = src/
 INC = inc/
 
 
 
-SRC_FILES =  main.cpp \
+SRC_FILES =		main_map.cpp \
+				Span_map.cpp
 
 SRC         =   $(addprefix $(SRC_DIR), $(SRC_FILES))
 OBJ_DIR		=	objs/
@@ -31,7 +32,7 @@ all:		$(NAME)
 
 $(NAME): $(OBJS_FILES)
 	@$(CXX) -o $(NAME) $(FLAGS) $(OBJS_FILES)
-	@echo "$(GREEN)ARRAY COMPILED SUCCESSFULLY!$(CLEAR)"
+	@echo "$(GREEN)SPAN COMPILED SUCCESSFULLY!$(CLEAR)"
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.cpp
 	@mkdir -p $(OBJ_DIR)
